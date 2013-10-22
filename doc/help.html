@@ -1,0 +1,148 @@
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>PhpMathPublisher.Extended : Help</title>
+<meta name="keywords" content="math,mathematics,math renderer,php,latex,publishing,">
+<style type="text/css">
+BODY {
+	font-family:  'Times New Roman',times,serif ;
+	background-color:#FFFFFF;
+	color:#000000;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+A:link    { color:#335d88;font-weight: bold; text-decoration: none;}
+A:visited { color:#335d88;font-weight: bold;  text-decoration: none;}
+A:hover   { color:red; font-weight: bold; text-decoration: none;}
+
+#contentlabel
+{
+	font-family : 'Times New Roman',times,serif ;
+	font-size : 1.2em;
+	font-style: bold;
+	color: #666666;
+	font-variant: small-caps;
+	background-color:#FFFFFF;
+	padding-left: 0px;
+	padding-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 2px dotted #888;
+}
+
+#contentbox
+{
+	font-family : 'Times New Roman',times,serif ;
+	font-size : medium;
+	text-align: center;
+	padding: 10px 10px 10px 10px;s
+}
+
+#header
+{
+	color: #666666;
+	padding: 10px 10px 10px 10px;
+	font-family :  'Times New Roman',times,serif ;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-color:#FFFFFF;
+	font-size: 1.4em;
+	padding: 2px 0 2px 10px;
+	margin: 0px;
+	text-align : center;
+	border-bottom: 2px dotted #888;
+}
+
+#nav 
+{
+	color: #335d88;
+	background-color: #95c1df;
+	font-family :  'Times New Roman',times,serif ;
+	font-size: 0.8em;
+	padding: 2px 0 2px 10px;
+	margin: 0px;
+}
+#aide
+{
+font-family :  arial,helvetica,sans-serif;
+}
+#content {
+	font-family :  arial,helvetica,sans-serif;
+	background-color:#f0f0f0;
+	border:1px solid #69c;
+	padding: 5px 5px 5px 5px;
+	text-align: justify;
+	font-size: 0.95em;
+}
+#aide .left
+{
+float : left;
+left : 1%;
+width :48%;
+font-family :  arial,helvetica,sans-serif;
+color:#000;
+background-color:#f0f0f0;
+border:1px solid #69c;
+line-height:150%;
+padding: 5px 5px 5px 5px;
+/*position: absolute;*/
+font-size: 1em;
+}
+
+#aide .right
+{
+float : right;
+right : 1%;
+width : 48%;
+font-family :  arial,helvetica,sans-serif;
+color:#000;
+background-color:#f0f0f0;
+border:1px solid #69c;
+line-height:150%;
+/*position: absolute;*/
+font-size: 1em;
+padding: 5px 5px 5px 5px;
+}
+
+
+
+#footer
+{
+position : relative;
+top : 1em;
+border-top: 2px dotted;
+border-color: #888;
+text-align: center;
+font-size: .8em;
+font-family :  'Times New Roman',times,serif ;
+padding: 2px;
+clear: both;
+}
+</style>
+</head>
+<body>
+<div id="header">PhpMathPublisher.Extended : help</div>
+<div id = "contentbox">
+PhpMathPublisher.Extended is improved <a href = "http://www.xm1math.net/phpmathpublisher/" target = "_blank">PhpMathPublisher</a>, represented by Pascal Brachet
+<div id = "content">
+	<p style = "text-align:center;">How to use PhpMathPublisherExtended</p>
+	1. Unpuck phpmathpublisher_v1.rar to your site root.<br/>
+	2. Require file 'phpmathpublisher/mathpublisher.php' for using this library in your script.<br/>
+	3. Use command:
+		echo PHPmathpublisher_Units_Publisher::mathfilter ('<m>{latex command}</m>', {font_size}, {path_to_img});
+		to get html code, which represents nessary img tag.<br/>
+		<br/>
+	For example:<br/>
+	&lt;?php<br/>
+		require ('phpmathpublisher/mathpublisher.php');<br/>
+		echo PHPmathpublisher_Units_Publisher::mathfilter ('<m>\root [4]{c}</m>', 16, 'phpmathpublisher/Img/');<br/>
+	?&gt;
+</div>
+</div>
+<div id="footer">
+<p><b><A href="http://www.xm1math.net/phpmathpublisher/" target="_blank">PhpMathPublisher</A></b> - Copyright 2005 <b>Pascal Brachet - France</b></p>
+<p><b><A href="http://www.pdevelop.narod.ru/">PhpMathPublisherExtended</A></b> - Copyright 2010 <b>Valentine Velikiy - Ukraine</b></p>
+</div>
+</body>
+</html>
